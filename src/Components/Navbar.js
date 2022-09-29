@@ -8,9 +8,9 @@ const Navbar=({ handleSearch,handlesearchButon })=>{
         <Stack direction='row' backgroundColor='black' p={3} sx={{ display:'flex', alignItems:'center' }} >
 
             <img src={logo} height='60px' width='80px' alt='' style={{marginLeft:'5%'}} />
-            <Typography variant='h5' color='white' sx={{marginLeft:{md:'6%',xs:'0%'}, fontFamily: "Georgia"}} > Abhishek Dameria </Typography>
+            <Typography variant='h5' color='white' sx={{marginLeft:{md:'6%',xs:'0%',}, fontFamily: "Georgia"}} > Abhishek Dameria </Typography>
 
-            <TextField sx={{ borderRadius:'80px',borderColor:'black', marginLeft:'45%' }} component= {Paper}
+            <TextField sx={{ borderRadius:'80px',borderColor:'black', marginLeft:{md:'45%'} }} component= {Paper} 
              InputProps={{ endAdornment:( <Button onClick={handlesearchButon} style={{ backgroundColor:'white',borderColor:'white' }} > <SearchRoundedIcon sx={{color:'red'}}/> </Button> ) }}
              onChange={handleSearch} placeholder='Seach...'
             />
